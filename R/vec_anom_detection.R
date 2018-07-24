@@ -226,7 +226,7 @@ AnomalyDetectionVec = function(x, max_anoms=0.10, direction='pos',
     if(verbose) message("No anomalies detected.")
     return (list("anoms"=data.frame(), "plot"=plot.new()))
   }
-  
+  #, "plot"=plot.new()
   if(plot){
     # -- Build title for plots utilizing parameters set by user
     plot_title <-  paste(title, round(anom_pct, digits=2), "% Anomalies (alpha=", alpha, ", direction=", direction,")", sep="")
