@@ -269,7 +269,7 @@ AnomalyDetectionVec = function(x, max_anoms=0.10, direction='pos',
     
     
     
-    return (list("anoms"=data.frame()))
+    return (list("anoms"=data.frame(), plot = xgraph))
   }
   #, "plot"=plot.new()
   if(plot){
